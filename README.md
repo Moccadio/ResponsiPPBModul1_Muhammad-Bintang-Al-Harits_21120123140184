@@ -2,7 +2,7 @@ Shoe Laundry API
 REST API sederhana untuk layanan daftar barang cuci sepatu, dibangun menggunakan Node.js + Express.js dan Supabase sebagai database.
 
 Deskripsi Umum Proyek
-Shoe Laundry API digunakan untuk mengelola data sepatu yang sedang dicuci di sebuah layanan laundry sepatu. API ini memungkinkan pengguna untuk menambah, membaca, memperbarui, dan menghapus (CRUD) data sepatu. Selain itu, API juga mendukung filter berdasarkan status sepatu, seperti Sedang Dicuci atau Selesai.
+Shoe Laundry API digunakan untuk mengelola data sepatu yang sedang dicuci di sebuah layanan laundry sepatu. API ini memungkinkan pengguna untuk menambah, membaca, memperbarui, dan menghapus data sepatu. Selain itu, API juga mendukung filter berdasarkan status sepatu, seperti Sedang Dicuci atau Selesai.
 
 Tujuan:
 1. Mengimplementasikan REST API menggunakan Node.js + Express.js.
@@ -25,7 +25,7 @@ tanggalMasuk - date - Tanggal sepatu masuk laundry
 tanggalSelesai - text - Tanggal sepatu selesai dicuci
 
 Contoh Request:
-1. POST /api/items
+1. POST http://localhost:3000/api/items
 Body Request:
 {
   "nama": "Nike Air Max",
@@ -39,9 +39,8 @@ Response:
   "message": "Data sepatu berhasil ditambahkan."
 }
 
-2. GET /api/items
+2. GET http://localhost:3000/api/items
 Response:
-[
     {
         "id": 2,
         "nama": "Nike Air Force 1",
@@ -63,9 +62,8 @@ Response:
         "tanggalMasuk": "2025-10-08",
         "tanggalSelesai": "-"
     }
-]
 
-3. PUT /api/items/2
+3. PUT http://localhost:3000/api/items/2
 Body Request:
 {
   "status": "Selesai",
@@ -77,14 +75,13 @@ Response:
   "message": "Status sepatu berhasil diperbarui."
 }
 
-4. DELETE /api/items/1
+4. DELETE http://localhost:3000/api/items/1
 Response:
 {
   "message": "Data sepatu berhasil dihapus."
 }
 
 Langkah Instalasi dan Cara Menjalankan API
-
 1. Clone repository: git clone https://github.com/Moccadio/ResponsiPPBModul1_Muhammad-Bintang-Al-Harits_21120123140184
 2. Masuk ke folder proyek
 3. Install dependency: npm install
@@ -94,5 +91,6 @@ SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsI
 PORT=3000
 5. Jalankan server: npm run dev
 6. Akses API di browser atau Postman: http://localhost:3000/api/items
+
 
 Link Deploy : https://responsi-ppb-modul1-muhammad-bintang-al-harits-21120-6uc005ika.vercel.app/

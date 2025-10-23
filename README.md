@@ -49,7 +49,9 @@ Selain itu, API juga mendukung **filter berdasarkan status sepatu**, seperti **S
 
 ### 1. **POST** – Tambah Data Sepatu
 
-Body Request:
+
+**Body Request:**
+```json
 {
   "nama": "Nike Air Max",
   "status": "Sedang Dicuci",
@@ -57,7 +59,7 @@ Body Request:
   "tanggalSelesai": "-"
 }
 
-Response:
+**Response:**
 {
   "message": "Data sepatu berhasil ditambahkan."
 }
@@ -117,4 +119,5 @@ PORT=3000
 
 
 Link Deploy : https://responsi-ppb-modul1-muhammad-bintang-al-harits-21120-6uc005ika.vercel.app/
+
 

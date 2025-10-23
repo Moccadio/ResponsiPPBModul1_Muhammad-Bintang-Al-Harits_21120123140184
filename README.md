@@ -47,8 +47,14 @@ Selain itu, API juga mendukung **filter berdasarkan status sepatu**, seperti **S
 
 ## 📩 Contoh Request & Response
 
-### 1. **POST** – Tambah Data Sepatu
+Berikut adalah contoh penggunaan endpoint pada **Shoe Laundry API**.
 
+---
+
+### 🧾 1. POST – Tambah Data Sepatu
+
+**Endpoint:**
+POST http://localhost:3000/api/items
 
 **Body Request:**
 ```json
@@ -59,65 +65,6 @@ Selain itu, API juga mendukung **filter berdasarkan status sepatu**, seperti **S
   "tanggalSelesai": "-"
 }
 
-**Response:**
 {
   "message": "Data sepatu berhasil ditambahkan."
 }
-
-2. GET http://localhost:3000/api/items
-Response:
-    {
-        "id": 2,
-        "nama": "Nike Air Force 1",
-        "status": "Selesai",
-        "tanggalMasuk": "2025-10-08",
-        "tanggalSelesai": "2025-10-11"
-    },
-    {
-        "id": 3,
-        "nama": "Nike Air Force 1",
-        "status": "Sedang Dicuci",
-        "tanggalMasuk": "2025-10-08",
-        "tanggalSelesai": "-"
-    },
-    {
-        "id": 4,
-        "nama": "Nike Air Max",
-        "status": "Sedang Dicuci",
-        "tanggalMasuk": "2025-10-08",
-        "tanggalSelesai": "-"
-    }
-
-3. PUT http://localhost:3000/api/items/2
-Body Request:
-{
-  "status": "Selesai",
-  "tanggalSelesai": "2025-10-11"
-}
-
-Response:
-{
-  "message": "Status sepatu berhasil diperbarui."
-}
-
-4. DELETE http://localhost:3000/api/items/1
-Response:
-{
-  "message": "Data sepatu berhasil dihapus."
-}
-
-Langkah Instalasi dan Cara Menjalankan API
-1. Clone repository: git clone https://github.com/Moccadio/ResponsiPPBModul1_Muhammad-Bintang-Al-Harits_21120123140184
-2. Masuk ke folder proyek
-3. Install dependency: npm install
-4. Buat file .env dengan isi:
-SUPABASE_URL=https://sjrvfzgfiwursswjbgae.supabase.co
-SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNqcnZmemdmaXd1cnNzd2piZ2FlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA5OTY3MzAsImV4cCI6MjA3NjU3MjczMH0.h5TRu-w92LvWrGKGApjePZGOVkR21bxam-4T7VV8ZD8
-PORT=3000
-5. Jalankan server: npm run dev
-6. Akses API di browser atau Postman: http://localhost:3000/api/items
-
-
-Link Deploy : https://responsi-ppb-modul1-muhammad-bintang-al-harits-21120-6uc005ika.vercel.app/
-
-

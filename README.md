@@ -1,31 +1,54 @@
-Shoe Laundry API
-REST API sederhana untuk layanan daftar barang cuci sepatu, dibangun menggunakan Node.js + Express.js dan Supabase sebagai database.
+# 🧼 Shoe Laundry API
 
-Deskripsi Umum Proyek
-Shoe Laundry API digunakan untuk mengelola data sepatu yang sedang dicuci di sebuah layanan laundry sepatu. API ini memungkinkan pengguna untuk menambah, membaca, memperbarui, dan menghapus data sepatu. Selain itu, API juga mendukung filter berdasarkan status sepatu, seperti Sedang Dicuci atau Selesai.
+REST API sederhana untuk layanan **daftar barang cuci sepatu**, dibangun menggunakan **Node.js + Express.js** dan **Supabase** sebagai database.
 
-Tujuan:
-1. Mengimplementasikan REST API menggunakan Node.js + Express.js.
-2. Menggunakan Supabase sebagai backend database.
-3. Menyediakan endpoint CRUD untuk data sepatu laundry.
-4. Mendukung filter berdasarkan status cucian.
+---
 
-Fitur Utama:
-1. POST: Tambah data sepatu baru
-2. GET: Ambil semua data sepatu atau filter berdasarkan status
-3. GET /:id: Ambil data sepatu tertentu berdasarkan ID
-4. PUT: Ubah status atau detail sepatu
-5. DELETE: Hapus data sepatu dari database
+## 📘 Deskripsi Umum Proyek
 
-Struktur Data 
-id - bigint - Primary key
-nama - text - Nama sepatu
-status - text - Status cucian
-tanggalMasuk - date - Tanggal sepatu masuk laundry
-tanggalSelesai - text - Tanggal sepatu selesai dicuci
+**Shoe Laundry API** digunakan untuk mengelola data sepatu yang sedang dicuci di sebuah layanan laundry sepatu.  
+API ini memungkinkan pengguna untuk **menambah, membaca, memperbarui, dan menghapus (CRUD)** data sepatu.  
+Selain itu, API juga mendukung **filter berdasarkan status sepatu**, seperti **Sedang Dicuci** atau **Selesai**.
 
-Contoh Request:
-1. POST http://localhost:3000/api/items
+---
+
+## 🎯 Tujuan
+
+1. Mengimplementasikan REST API menggunakan **Node.js + Express.js**.  
+2. Menggunakan **Supabase** sebagai backend database.  
+3. Menyediakan **endpoint CRUD** untuk data sepatu laundry.  
+4. Mendukung **filter berdasarkan status cucian**.
+
+---
+
+## ⚙️ Fitur Utama
+
+| Metode | Endpoint | Deskripsi |
+|---------|-----------|-----------|
+| **POST** | `/api/items` | Tambah data sepatu baru |
+| **GET** | `/api/items` | Ambil semua data sepatu atau filter berdasarkan status |
+| **GET** | `/api/items/:id` | Ambil data sepatu tertentu berdasarkan ID |
+| **PUT** | `/api/items/:id` | Ubah status atau detail sepatu |
+| **DELETE** | `/api/items/:id` | Hapus data sepatu dari database |
+
+---
+
+## 🗂️ Struktur Data
+
+| Kolom | Tipe Data | Keterangan |
+|--------|------------|------------|
+| `id` | bigint | Primary key |
+| `nama` | text | Nama sepatu |
+| `status` | text | Status cucian |
+| `tanggalMasuk` | date | Tanggal sepatu masuk laundry |
+| `tanggalSelesai` | text | Tanggal sepatu selesai dicuci |
+
+---
+
+## 📩 Contoh Request & Response
+
+### 1. **POST** – Tambah Data Sepatu
+
 Body Request:
 {
   "nama": "Nike Air Max",
@@ -94,3 +117,4 @@ PORT=3000
 
 
 Link Deploy : https://responsi-ppb-modul1-muhammad-bintang-al-harits-21120-6uc005ika.vercel.app/
+

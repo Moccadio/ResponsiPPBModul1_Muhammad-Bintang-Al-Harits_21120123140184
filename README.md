@@ -15,7 +15,7 @@ Selain itu, API juga mendukung **filter berdasarkan status sepatu**, seperti **S
 3. Menyediakan **endpoint CRUD** untuk data sepatu laundry.  
 4. Mendukung **filter berdasarkan status cucian**.
 
-# ⚙️ Fitur Utama
+# Fitur Utama
 
 | Metode | Endpoint | Deskripsi |
 |---------|-----------|-----------|
@@ -163,5 +163,6 @@ npm run dev
 http://localhost:3000/api/items
 ```
 
-# 🌐 Link Deploy
+# Link Deploy
 [Shoe Laundry API - Vercel Deploy](https://responsi-ppb-modul1-muhammad-bintang-al-harits-21120-6uc005ika.vercel.app/)
+
